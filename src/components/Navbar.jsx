@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 
 const Navbar = ({ toggleModal, showModal }) => {
   return (
-    <div className="flex justify-between py-6 relative items-center">
+    <div className="flex justify-between py-6 px-6 relative items-center bg-white">
       <Link to="/">
         <img className="w-25 h-16" src={logo} />
       </Link>

@@ -1,5 +1,5 @@
-import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const list = [
   { name: "使用說明", path: "how-to-use" },
@@ -11,8 +11,10 @@ const list = [
 
 const SmallNavModal = ({ showModal, toggleModal }) => {
   return (
-    <div className="fixed h-[88%] top-28 w-screen bg-primary z-20 px-6 py-6">
-      <div className="flex flex-col justify-between h-full">
+    <div className="fixed bg-primary w-screen h-screen z-20">
+      <Navbar showModal={showModal} toggleModal={toggleModal} />
+
+      <div className="flex flex-col gap-96 p-6">
         <nav className="flex flex-col gap-6 text-xl text-white hover:#606c38 text-start">
           {list.map((item, index) => (
             <div key={index}>

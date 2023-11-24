@@ -14,7 +14,7 @@ const HomeLayout = () => {
       {showModal && (
         <SmallNavModal showModal={showModal} toggleModal={toggleModal} />
       )}
-      <div className="max-w-[1440px] mx-auto px-6">
+      <div className="max-w-[1440px] mx-auto">
         <Navbar showModal={showModal} toggleModal={toggleModal} />
       </div>
       <div className="border-b mb-6"></div>
