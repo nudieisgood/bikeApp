@@ -5,7 +5,7 @@ const CitySearch = () => {
   const { handleSearch, search, setSearch } = useAppContext();
 
   return (
-    <div className="relative">
+    <form className="relative" onSubmit={handleSearch}>
       <input
         onChange={(e) => setSearch(e.target.value)}
         className="py-2 px-4 rounded-lg bg-gray-100 w-full"
@@ -13,15 +13,10 @@ const CitySearch = () => {
         placeholder="搜尋站點"
         value={search}
       />
-      <div
-        className="absolute top-3 right-4 text-gray-400 hover:cursor-pointer"
-        onClick={() => {
-          handleSearch();
-        }}
-      >
+      <button type="submit" className="absolute top-3 right-4 text-gray-400">
         <IoSearchOutline />
-      </div>
-    </div>
+      </button>
+    </form>
   );
 };
 export default CitySearch;
