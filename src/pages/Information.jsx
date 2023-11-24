@@ -1,7 +1,7 @@
-import CheckBoxContainer from "../components/checkBoxContainer";
+import CheckBoxContainer from "../components/CheckBoxContainer";
 import CitySearch from "../components/CitySearch";
 import CitySelect from "../components/CitySelect";
-import InfoContainer from "../components/infoContainer";
+import InfoContainer from "../components/InfoContainer";
 import { useAppContext } from "../context/AppContext";
 
 const Information = () => {

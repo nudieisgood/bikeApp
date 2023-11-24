@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { AppContextProvider } from "./context/appContext";
+import { AppContextProvider } from "./context/AppContext";
 import HomeLayout from "./pages/HomeLayout";
 import Information from "./pages/Information";
 
