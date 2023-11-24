@@ -21,9 +21,9 @@ const AppContextProvider = ({ children }) => {
     setCity(city);
   };
 
-  const handleSearch = () => {
+  const handleSearch = (e) => {
+    e.preventDefault();
     if (!search) return;
-
     setFilteredData((pre) =>
       filteredData.filter((data) => data.sna.includes(search))
     );
