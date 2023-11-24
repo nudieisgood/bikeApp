@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  color: #606c38;
+}
+
+input[type="checkbox"] {
+  accent-color: #b5cc22;
+}
