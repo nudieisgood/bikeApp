@@ -11,7 +11,7 @@ const Information = () => {
   return (
     <div className="flex flex-col gap-6">
       <h1 className="text-primary text-2xl tracking-widest font-semibold">
-        站點資訊
+        站點資訊sas
       </h1>
       <div className="flex flex-col sm:flex-row lg:items-center gap-2">
         <CitySelect />
